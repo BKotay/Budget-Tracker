@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h2> Use the BK Budget to track your expenses and incomes by the second!</h2>
+    </header>
+
+        <section>
+            <img src="images/bank.webp" alt="bank-image">
+        </section>
+
+        <div class="budget-form">
+         <select id="select-dropdown">
+          <option value="Options">Please Choose an Option</option>
+          <option value="Income">Income</option>
+          <option value="Expense">Expense</option>
+         </select>
+         <input id="description" placeholder="Description">
+         <input id="money" placeholder="Enter $$$ (Ex: $100)">
+      </div>
+      <button onclick="addBudget" id="task-button"><strong>$ADD TO YOUR TRACKER</strong></button>
+
+     
+    <div class="budget-notes">
+
+         <h3>Final Balance</h3>
+
+             <h4>Total Earnings</h4>
+
+            
+            <h4>Total Expenses</h4>
+
+    </div>
+    <div id="message"></div>
+
+
+      <script src="scripts.js"></script>
+</body>
+</html>
