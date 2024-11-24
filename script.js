@@ -46,7 +46,9 @@ document.getElementById("income-button").addEventListener
     const incAmount = parseFloat(document.getElementById("income-money").value);
     total.takeIncome(incAmount);
     const message = document.querySelector('.message')
-message.innerText = `The name of the most recent income is ${incDescription} and the most recent income amount is ${incAmount}.`
+message.innerText = `Updated Budget Summary: The name of the most recent income is ${incDescription} and the most recent income amount is ${incAmount}.`
+
+
     event.target.reset();
 })
 
@@ -56,7 +58,8 @@ const expDescription = document.getElementById("expense-description").value;
 const expAmount = parseFloat(document.getElementById("expense-money").value);
 total.takeExpense(expAmount);
 const message = document.querySelector('.message')
-message.innerText = `The name of the most recent expense is ${expDescription} and the most recent expense amount is ${expAmount}.`
+message.innerText = `Updated Budget Summary: The name of the most recent expense is ${expDescription} and the most recent expense amount is ${expAmount}.`
 event.target.reset();
 })
+
 

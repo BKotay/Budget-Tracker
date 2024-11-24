@@ -1,11 +1,10 @@
-
 $font-stack: Arial;
 $light-color: #00FFFF;
-$backgroundOne-color: #89CFF0;
+$backgroundOne-color: #202c32;
 $backgroundTwo-color: #7393B3;
 
 @mixin gradient ($backgroundOne-color, $backgroundTwo-color){
-  background: linear-gradient(to left, $backgroundOne-color, $backgroundTwo-color);
+  background: linear-gradient(to right, $backgroundOne-color, $backgroundTwo-color);
 }
 
 * {
@@ -32,7 +31,13 @@ body {
     line-height: 1.6;
     color: $light-color;
     padding: 10px 20px;
-    .budget-form{
+    #budget-form{
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+      gap: 20px;
+    }
+    #expense-form{
       display: flex;
       justify-content: center;
       margin: 30px auto;
@@ -49,20 +54,12 @@ body {
     input::placeholder{
       padding-left: 1px;
     }
-    select {
-      width: 170px;
-      height: 60px;
-      padding-left: 5px;
-      font-size: 12px;
-    }
     img {
       display: flex;
       height: 200px;
       margin: 40px auto 0px;
     }
     button{
-      display: flex;
-      margin: 18px auto;
       width: 220px;
       height: 70px;
       background-color: #1c7e81;
@@ -72,7 +69,7 @@ body {
       padding-top: 5px;
 
       :hover{
-        transform: scale(1.05);
+        transform: scale(1.15);
         cursor: pointer;
       }
     }
@@ -88,37 +85,52 @@ body {
     }
     .message{
       display: flex;
-      margin: 0 auto;
+      justify-content: center;
+      margin: 20px auto;
       color: white;
       font-size: 1.4rem;
-      width: 800px;
-      height: 500px;
+      font-style: italic;
+    }
+    td{
+      width: 100px;
     }
 }
 
+@media screen and (max-width: 1126px) and (min-width: 695px){
+body {
+  width: 100vw;
+  h2 {
+    font-size: 1.2rem;
+  }
+  input{
+    font-size: 14px;
+  }
+  button {
+    width: 120px;
+    font-size: 24px;
+  }
+ p {
+  font-size: 1.2rem;
+ }
+}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
+@media screen and (max-width: 694px) and (min-width: 330px){
+  body {
+     width: 100vw;
+  h2{
+    font-size: 1.02rem;
+  }
+  input {
+    width: 150px;
+    font-size: 12px;
+  }
+  button{
+     font-size: 14px;
+     width: 100px;
+  }
+  p{
+    font-size: 1.05rem;
+  }
+}
+}

@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <h2> Use the BK Budget to track your expenses and incomes by the second!</h2>
+        <h2>Use the BK Budget to track your expenses and incomes by the second!</h2>
     </header>
 
         <section>
@@ -18,32 +18,34 @@
         </section>
     <div class="budget-section">
         <form id="budget-form">
-         <input type="text"  id="income-description" placeholder="Income Description" required>
-         <input type="number"  id="income-money" placeholder="Enter amount (Ex: $100)" required>
+         <input type="text"  id="income-description" placeholder="Enter name of income" required>
+         <input type="number"  id="income-money" placeholder="Enter income amount" required>
          <button type="submit" id="income-button"><strong>$ADD INCOME</strong></button>
         </form>
 
         <form id="expense-form">
-         <input type="text" id="expense-description" placeholder="Enter expense Description" required>
-         <input type="number" id="expense-money" placeholder="Enter expense (Ex: $100)" required>
+         <input type="text" id="expense-description" placeholder="Enter name of expense" required>
+         <input type="number" id="expense-money" placeholder="Enter expense amount" required>
       <button type="submit" id="expense-button"><strong>ADD EXPEN$E</strong></button>
         </form>
 
 
      
       <div class="budget-notes">
-
-         <p>Final Balance: <span id="final-number">0</span></p>
+            <p>Final Balance: <span id="final-number">0</span></p>
 
              <p>Earnings: <span id="earnings-number">0</span></p>
 
             
             <p>Expenses: <span id="expenses-number">0</span></p>
-
        </div>
    </div>
    <div class="message"></div>
-
+   <table>
+    <tr>
+        <td></td>
+    </tr>
+   </table>
     <script src="script.js"></script>
 </body>
 </html>

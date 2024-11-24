@@ -17,13 +17,19 @@ header h2 {
 }
 
 body {
-  background: linear-gradient(to left, #89CFF0, #7393B3);
+  background: linear-gradient(to right, #202c32, #7393B3);
   font-family: Arial;
   line-height: 1.6;
   color: #00FFFF;
   padding: 10px 20px;
 }
-body .budget-form {
+body #budget-form {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 20px;
+}
+body #expense-form {
   display: flex;
   justify-content: center;
   margin: 30px auto;
@@ -41,20 +47,12 @@ body input::-moz-placeholder {
 body input::placeholder {
   padding-left: 1px;
 }
-body select {
-  width: 170px;
-  height: 60px;
-  padding-left: 5px;
-  font-size: 12px;
-}
 body img {
   display: flex;
   height: 200px;
   margin: 40px auto 0px;
 }
 body button {
-  display: flex;
-  margin: 18px auto;
   width: 220px;
   height: 70px;
   background-color: #1c7e81;
@@ -64,7 +62,7 @@ body button {
   padding-top: 5px;
 }
 body button :hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
   cursor: pointer;
 }
 body .budget-notes {
@@ -79,9 +77,50 @@ body .budget-notes :hover {
 }
 body .message {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+  margin: 20px auto;
   color: white;
   font-size: 1.4rem;
-  width: 800px;
-  height: 500px;
+  font-style: italic;
+}
+body td {
+  width: 100px;
+}
+
+@media screen and (max-width: 1126px) and (min-width: 695px) {
+  body {
+    width: 100vw;
+  }
+  body h2 {
+    font-size: 1.2rem;
+  }
+  body input {
+    font-size: 14px;
+  }
+  body button {
+    width: 120px;
+    font-size: 24px;
+  }
+  body p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 694px) and (min-width: 330px) {
+  body {
+    width: 100vw;
+  }
+  body h2 {
+    font-size: 1.02rem;
+  }
+  body input {
+    width: 150px;
+    font-size: 12px;
+  }
+  body button {
+    font-size: 14px;
+    width: 100px;
+  }
+  body p {
+    font-size: 1.05rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
