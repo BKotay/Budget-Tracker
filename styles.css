@@ -120,7 +120,7 @@ body #refresh-button {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 694px) and (min-width: 330px) {
+@media screen and (max-width: 694px) and (min-width: 318px) {
   body {
     width: 100vw;
   }
