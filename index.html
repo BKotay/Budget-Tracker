@@ -16,32 +16,34 @@
         <section>
             <img src="images/bank.webp" alt="bank-image">
         </section>
+    <div class="budget-section">
+        <form id="budget-form">
+         <input type="text"  id="income-description" placeholder="Income Description" required>
+         <input type="number"  id="income-money" placeholder="Enter amount (Ex: $100)" required>
+         <button type="submit" id="income-button"><strong>$ADD INCOME</strong></button>
+        </form>
 
-        <div class="budget-form">
-         <select id="select-dropdown">
-          <option value="Options">Please Choose an Option</option>
-          <option value="Income">Income</option>
-          <option value="Expense">Expense</option>
-         </select>
-         <input id="description" placeholder="Description">
-         <input id="money" placeholder="Enter $$$ (Ex: $100)">
-      </div>
-      <button onclick="addBudget" id="task-button"><strong>$ADD TO YOUR TRACKER</strong></button>
+        <form id="expense-form">
+         <input type="text" id="expense-description" placeholder="Enter expense Description" required>
+         <input type="number" id="expense-money" placeholder="Enter expense (Ex: $100)" required>
+      <button type="submit" id="expense-button"><strong>ADD EXPEN$E</strong></button>
+        </form>
+
 
      
-    <div class="budget-notes">
+      <div class="budget-notes">
 
-         <h3>Final Balance</h3>
+         <p>Final Balance: <span id="final-number">0</span></p>
 
-             <h4>Total Earnings</h4>
+             <p>Earnings: <span id="earnings-number">0</span></p>
 
             
-            <h4>Total Expenses</h4>
+            <p>Expenses: <span id="expenses-number">0</span></p>
 
-    </div>
-    <div id="message"></div>
+       </div>
+   </div>
+   <div class="message"></div>
 
-
-      <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

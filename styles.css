@@ -76,4 +76,12 @@ body .budget-notes {
 }
 body .budget-notes :hover {
   text-decoration: underline;
+}
+body .message {
+  display: flex;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.4rem;
+  width: 800px;
+  height: 500px;
 }/*# sourceMappingURL=styles.css.map */
